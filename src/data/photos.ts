@@ -14,7 +14,7 @@ export const galleryPhotos: Photo[] = [
   },
   {
     id: "2",
-    url: "gallery/2.jpg",
+    url: "gallery/2.png",
     caption: "Senyum ini adalah bukti bahwa hari-hari berat pun bisa terasa ringan.",
   },
   {
