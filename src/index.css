@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Quicksand:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-pixel: "DotGothic16", monospace;
+
+  --color-cream: #FDFBF7;
+  --color-pink-light: #FFEBF0;
+  --color-pink-soft: #FFD1DC;
+  --color-pink-deep: #E8A1B0;
+  --color-pink-warm: #FFB3C6;
+  --color-sage: #D1E0D7;
+  --color-sage-dark: #A5C4B1;
+  --color-ink: #4A4444;
+  --color-border: #4A4444;
+}
+
+:root {
+  --cream: #FDFBF7;
+  --pink-light: #FFEBF0;
+  --pink-soft: #FFD1DC;
+  --pink-deep: #E8A1B0;
+  --pink-warm: #FFB3C6;
+  --sage: #D1E0D7;
+  --sage-dark: #A5C4B1;
+  --ink: #4A4444;
+  --border: #4A4444;
+}
+
+body {
+  background-color: var(--cream);
+  font-family: "Quicksand", sans-serif;
+  color: var(--ink);
+  margin: 0;
+  min-height: 100vh;
+  /* Removed hidden overflow and flex layouts that blocked scrolling */
+}
+
+/* Cute decorative styles */
+.pixel-border {
+  border: 4px solid var(--border);
+  box-shadow: 4px 4px 0px var(--sage);
+  border-radius: 12px;
+}
+
+.pixel-border:hover {
+  box-shadow: 6px 6px 0px var(--pink-soft);
+  transform: translate(-2px, -2px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream);
+  border-left: 2px solid var(--border);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pink-deep);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+}

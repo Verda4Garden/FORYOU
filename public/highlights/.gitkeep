@@ -1,0 +1,3 @@
+# Folder untuk foto highlight.
+# Simpan foto dengan nama 1.jpg, 2.jpg, dst.
+# Jika ada foto PNG, ubah ekstensi di src/data/photos.ts.
